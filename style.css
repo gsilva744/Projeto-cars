@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto: #111111;
+    --grafite: #2B2B2B;
+    --cinza-es: #5A5A5A;
+    --cinza-claro: #D1D1D1;
+    --branco: #FFFFFF;
+    --azul-marinho: #0D1B2A;
+    --vermelho: #D90429;
+}
+
+header {
+    background-color: var(--cinza-es);
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: "Saira", sans-serif;;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+/* OFERTAS */
+
+h2{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 10;
+    font-style: normal;
+}
+
+div.ofertas {
+    background-color: var(--azul-marinho);
+    width: 100%;
+    height: 300px;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: var(--azul-marinho);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 50px 30px;
+}
+
+.card {
+    background-color: var(--cinza-es);
+    width: 500px;
+    height: 300px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px 0px black;
+    gap: 8px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    background-color: var(--cinza-claro);
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card h2 {
+    font-size: 2em;
+    color: white;
+}
+
+.card a {
+    background-color: var(--vermelho);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.vantagens {
+    background-color: var(--cinza-es);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+}
+
+.vantagens h2 {
+    font-size: 2.5em;
+}
+
+.vantagens a {
+    background-color: var(--vermelho);
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+
+    width: 100%;
+    
+}
+
+.vant {
+    background-color: var(--vermelho);
+    height: 300px;
+    width: 300px;
+}
