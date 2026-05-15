@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto: #111111;
+    --grafite: #2B2B2B;
+    --cinza-es: #5A5A5A;
+    --cinza-claro: #D1D1D1;
+    --branco: #FFFFFF;
+    --azul-marinho: #0D1B2A;
+    --vermelho: #D90429;
+}
+
+header {
+    background-color: var(--cinza-es);
+    padding: 0px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p {
+    font-size: 2em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 220px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+/* OFERTAS */
+
+.inconsolata{
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100; 
+}
+.lexend1, .lexend{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+div.ofertas {
+    background-color: var(--azul-marinho);
+    width: 100%;
+    height: 300px;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: var(--azul-marinho);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100; 
+}
+
+.archivo{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 10;
+    font-style: normal;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 50px 30px;
+}
+
+.card {
+    background-color: var(--cinza-es);
+    width: 500px;
+    height: 300px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px 0px black;
+    gap: 8px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    background-color: var(--cinza-claro);
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card h2 {
+    font-size: 2em;
+    color: white;
+    text-shadow: 4px 2px 5px black;
+}
+
+.card a {
+    background-color: var(--vermelho);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.vantagens {
+    background-color: var(--cinza-claro);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+}
+
+.vantagens h2 {
+    font-size: 2.5em;
+}
+
+.vantagens a {
+    background-color: var(--vermelho);
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+
+    width: 100%;
+    
+}
+
+.vant {
+    background-color: var(--azul-marinho);
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+
+.vant1, .vant2 {
+    display: flex;
+    align-items: center;
+   
+    gap: 50px;
+    margin: auto;
+}
+
+.vant2 {
+    display: none;
+}
+
+.vant h2 {
+    font-size: 1.7em;
+}
+
+.vant i{
+    font-size: 4em;
+}
+
+.vant p {
+    text-align: center;
+}
+
+.pass {
+    font-size: 3em;
+    background-color: transparent;
+    border: none;
+    color: rgb(161, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pass:hover {
+    background-color: #0d1b2a36;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--azul-marinho);
+    padding: 30px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-content > .footer-section {
+    border: 1px solid red;
+    color: var(--branco);
+    padding: 25px;
+    width: 30%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: #D1D1D1;
+}
+
+footer img{
+    width: 400px;
+    margin: auto;
+    display: block;
+}
+
+.copy {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
