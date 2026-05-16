@@ -71,6 +71,11 @@ div.ofertas {
     height: 300px;
 }
 
+.ofertas img {
+    width: 100%;
+    height: 550px;
+}
+
 .links a {
     text-decoration: none;
     background-color: var(--azul-marinho);
@@ -98,6 +103,16 @@ div.ofertas {
     justify-content: space-around;
     gap: 50px;
     padding: 50px 30px;
+    margin-top: 250px;
+}
+
+.cards2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 50px 30px;
+    
 }
 
 .card {
