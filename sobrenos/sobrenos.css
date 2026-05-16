@@ -1,0 +1,165 @@
+* { margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    --preto: #111111;
+    --grafite: #2B2B2B;
+    --cinza-es: #5A5A5A;
+    --cinza-claro: #D1D1D1;
+    --branco: #FFFFFF;
+    --azul-marinho: #0D1B2A;
+    --vermelho: #D90429;
+}
+
+header p {
+    color: var(--preto);
+    font-size: 2em;
+}
+
+header {
+    background-color: var(--cinza-es);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: "Saira", sans-serif;;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: var(--azul-marinho);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family: "Inconsolata", monospace;
+}
+
+/* PARTE DO SOBRE */
+
+.sobre {
+    font-weight: 40px;
+    color: #FFFFFF;
+    background-color: var(--azul-marinho);
+    text-align: center;
+    padding: 7px;
+}
+
+
+h2 {
+    color: var(--vermelho);
+    font-size: 2.0em;
+    font-family: "Lexend", sans-serif;
+    text-shadow: 1px 1px rgb(245, 243, 243);
+}
+
+/* FUNCIONAMENTO */
+
+.funciona {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.topicos {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topicos h2{
+    Font-family: "Lexend", sans-serif;
+    color: #FFFFFF;
+    text-shadow: 3px black;
+}
+
+.topicos p {
+    color:white;
+    font-family: "Inconsolata", monospace;
+}
+
+.card{
+    background-color: var(--azul-marinho);
+    width: 270px;
+    height: 240px;
+    padding: 16px;
+    text-align: center;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--vermelho);
+}
+
+.titulo h2 {
+    color: red;
+    position: relative;
+    bottom: 32px;
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
+            
+
+/* FOOTER */
+
+footer {
+    background-color: var(--azul-marinho);
+    padding: 30px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-content > .footer-section {
+    border: 1px solid red;
+    color: var(--branco);
+    padding: 25px;
+    width: 30%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: #D1D1D1;
+}
+
+footer img{
+    width: 400px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+}
+
+.copy {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.footer-section h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+}
