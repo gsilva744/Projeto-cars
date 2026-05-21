@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto: #111111;
+    --grafite: #2B2B2B;
+    --cinza-es: #5A5A5A;
+    --cinza-claro: #D1D1D1;
+    --branco: #FFFFFF;
+    --azul-marinho: #0D1B2A;
+    --vermelho: #D90429;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--cinza-es);
+    padding: 0px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p {
+    font-size: 2em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 220px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: var(--azul-marinho);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100; 
+}
