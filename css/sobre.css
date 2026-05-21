@@ -53,11 +53,134 @@ header p {
     color: white;
     padding: 10px;
     border-radius: 10px;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: "Inconsolata", monospace;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
     font-variation-settings:
     "wdth" 100; 
+}
+
+/* MAIN */
+
+.init {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    height: auto;
+    flex-flow: column nowrap;
+    gap: 10px;
+    background-color: var(--preto);
+}
+
+.init h1 {
+    font-size: 3em;
+}
+
+.init p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+
+nav a {
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: var(--cinza-es);
+}
+
+main .content{
+    width: 90%;
+    margin: auto;
+    padding: 25px 0px;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    padding-bottom: 15px;
+}
+
+.content p {
+    font-size: 1.5em;
+    line-height: 1.7;
+    padding-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cinza-es);
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--azul-marinho);
+    padding: 30px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-content > .footer-section {
+    border: 1px solid red;
+    color: var(--branco);
+    padding: 25px;
+    width: 30%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: #D1D1D1;
+}
+
+footer img{
+    width: 400px;
+    margin: auto;
+    display: block;
+}
+
+.copy {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    color: white;
 }
