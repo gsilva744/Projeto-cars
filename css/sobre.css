@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 10px;
+}
+
 :root {
     --preto: #111111;
     --grafite: #2B2B2B;
@@ -21,15 +25,16 @@
 
 header {
     background-color: var(--cinza-es);
-    padding: 0px 20px;
-
+    padding: 0rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 header p {
-    font-size: 2em;
+    font-size: 3rem;
+    text-align: center;
+    padding-left: 12rem;
 }
 
 .logo {
@@ -39,7 +44,7 @@ header p {
 }
 
 .logo img{
-    width: 220px;
+    width: 22rem;
 }
 
 .links {
@@ -53,13 +58,8 @@ header p {
     color: white;
     padding: 10px;
     border-radius: 10px;
-    font-size: 1.5em;
+    font-size: 2.7rem;
     font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100; 
 }
 
 /* MAIN */
@@ -78,12 +78,12 @@ header p {
 }
 
 .init h1 {
-    font-size: 3em;
+    font-size: 5em;
 }
 
 .init p {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 nav {
@@ -100,23 +100,33 @@ nav a {
     border-radius: 20px;
     text-decoration: none;
     background-color: var(--cinza-es);
+    cursor: initial;
+    font-size: 2rem;
+    width: 20rem;
+    text-align: center;
 }
 
 main .content{
     width: 90%;
     margin: auto;
-    padding: 25px 0px;
+    padding: 20px;
+    background-color: white;
 }
 
 .content h2 {
-    font-size: 2.5em;
+    font-family: 'Lexend';
+    font-size: 4rem;
     padding-bottom: 15px;
+    color:var(--preto);
+    text-shadow: 3px 2px 2px gray;
+
 }
 
 .content p {
-    font-size: 1.5em;
-    line-height: 1.7;
+    font-size: 2.3rem;
+    line-height: 2;
     padding-bottom: 20px;
+    text-align: justify;
 }
 
 .cards {
@@ -125,30 +135,149 @@ main .content{
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .card {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: var(--cinza-es);
+    background-color: var(--azul-marinho);
     border-radius: 20px;
-    width: 200px;
-    height: 200px;
-    gap: 10px;
-    padding: 10px;
+    width: 25em;
+    height: 25em;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 3em;
+    box-shadow: 3px 3px 3px gray;
 }
 
-.card p {
-    font-size: 0.9em;
+.card .baixo p {
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.cards .baixo h3 {
+    font-size: 2.5rem;
+    font-family: 'Lexend';
+    color: var(--branco);
+}
+
+.cards i {
+    font-size: 5.6rem;
+    color: var(--vermelho);
+}
+
+.funcionamento {
+    padding: 10px 0px;
+}
+
+.funcionamento h2{
+    padding-bottom: 1em;
+}
+
+.reserva h3 {
+    font-size: 3rem;
+    padding-bottom: 5px;
+}
+
+.reserva p {
+    font-size: 2.3em;
+    text-align: justify;
+    padding: 0px 0px 0px 0px;
+}
+
+.container_reserva {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.reservas {
+    border-bottom: 1px solid black;
+    width: 100%;
+    
+    padding: 10px 0px;
+}
+
+.reservas h4 {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+}
+
+.reservas ul {
+    list-style-type: decimal;
+}
+
+.reservas li {
+    font-size: 2.3em;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+
+/* FORMAS DE PAGAMENTO */
+
+.pagamento h2 {
+    padding-top: 5rem;
+}
+
+.pagamento p {
+    font-size: 2.3rem;
+}
+
+.pagamento h4 {
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+
+.pagamento li {
+    font-size: 2.3em;
+    margin-left: 40px;
+    line-height: 1.5;
+}
+
+.pagamento ul {
+    list-style: decimal;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+/* TARIFAS */
+
+.tarifa h4{
+    font-size: 2.3rem;
+}
+
+.tarifa h2 {
+    padding-top: 0.5em;
+    border-top: 1px solid black;
+}
+
+.tarifa h3 {
+    font-size: 3.5rem;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+.tarifa ul {
+    margin-left: 40px;
+    list-style: decimal;
+    padding: 20px 0px;
+}
+
+.tarifa li {
+    font-size: 2.3rem;
+    line-height: 1.5;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: var(--azul-marinho);
-    padding: 30px;
+    background-color: #0D1B2A;
+    padding: 4rem 4rem 0px 4rem;
 }
 
 .footer-content {
@@ -163,8 +292,27 @@ footer {
     color: var(--branco);
     padding: 25px;
     width: 30%;
-    height: 150px;
+    height: 24rem;
     border-radius: 10px;
+    background-color: #0D1B2A;
+}
+
+.footer-section h2 {
+    font-size: 4em;
+    padding-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 2.02rem;
+}
+
+.footer-section li {
+    font-size: 2.3rem;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
 }
 
 .link{
@@ -173,7 +321,7 @@ footer {
 }
 
 footer img{
-    width: 400px;
+    width: 40rem;
     margin: auto;
     display: block;
 }
@@ -183,4 +331,9 @@ footer img{
     padding: 5px;
     text-align: center;
     color: white;
+    font-size: 2rem;
+}
+
+span {
+    color: var(--cinza-claro);
 }

@@ -32,7 +32,9 @@ header {
 }
 
 header p {
-    font-size: 2.1rem;
+    font-size: 3rem;
+    text-align: center;
+    padding-left: 12rem;
 }
 
 .logo {
@@ -50,54 +52,39 @@ header p {
     gap: 10px;
 }
 
-
-/* OFERTAS */
-
-.inconsolata{
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100; 
-}
-.lexend1, .lexend{
-    font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
-
-div.ofertas {
-    background-color: var(--azul-marinho);
-    width: 100%;
-    height: 30rem;
-}
-
-.ofertas img {
-    width: 100%;
-    height: 55rem;
-}
-
 .links a {
     text-decoration: none;
     background-color: var(--azul-marinho);
     color: white;
     padding: 10px;
     border-radius: 10px;
-    font-size: 1.5em;
+    font-size: 2.7rem;
     font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100; 
+}
+
+/* OFERTAS */
+
+.inconsolata{
+    font-family: "Inconsolata", monospace;
+}
+.lexend1, .lexend{
+    font-family: "Lexend", sans-serif;
+}
+
+div.ofertas {
+    background-color: var(--azul-marinho);
+    width: 100%;
+    height: 60rem;
+}
+
+.ofertas img {
+    width: 100%;
+    height: 60rem;
 }
 
 .archivo{
     font-family: "Archivo Black", sans-serif;
-    font-weight: 10;
-    font-style: normal;
+    font-weight: lighter;
 }
 
 .cards {
@@ -107,6 +94,8 @@ div.ofertas {
     gap: 50px;
     padding: 50px 30px;
     margin-top: 25rem;
+    width: 90%;
+    margin: auto;
 }
 
 .cards2 {
@@ -115,7 +104,8 @@ div.ofertas {
     justify-content: space-around;
     gap: 50px;
     padding: 50px 30px;
-    
+    width: 90%;
+    margin: auto;
 }
 
 .card {
@@ -125,7 +115,7 @@ div.ofertas {
     flex-wrap: wrap;
     border-radius: 10px;
     box-shadow: 4px 4px 7px 0px black;
-    gap: 8px;
+    gap: 12px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -147,7 +137,7 @@ div.ofertas {
 }
 
 .card h2 {
-    font-size: 2em;
+    font-size: 3em;
     color: white;
     text-shadow: 4px 2px 5px black;
 }
@@ -155,9 +145,10 @@ div.ofertas {
 .card a {
     background-color: var(--vermelho);
     color: white;
-    padding: 10px;
+    padding: 5px 10px;
     text-decoration: none;
     border-radius: 10px;
+    font-size: 2.2em;
 }
 
 .vantagens {
@@ -172,15 +163,17 @@ div.ofertas {
 }
 
 .vantagens h2 {
-    font-size: 2.5em;
+    font-size: 4rem;
+    padding: 20px 0px;
 }
 
 .vantagens a {
     background-color: var(--vermelho);
-    padding: 5px;
+    padding: 5px 14px;
     border-radius: 10px;
     text-decoration: none;
     color: white;
+    font-size: 3em;
 }
 
 .content {
@@ -192,7 +185,6 @@ div.ofertas {
     gap: 40px;
 
     width: 100%;
-    
 }
 
 .vant {
@@ -222,19 +214,20 @@ div.ofertas {
 }
 
 .vant h2 {
-    font-size: 1.7em;
+    font-size: 2.8rem;
 }
 
 .vant i{
-    font-size: 4em;
+    font-size: 10rem;
 }
 
 .vant p {
     text-align: center;
+    font-size: 2rem;
 }
 
 .pass {
-    font-size: 3em;
+    font-size: 6em;
     background-color: transparent;
     border: none;
     color: rgb(161, 0, 0);
@@ -248,8 +241,8 @@ div.ofertas {
 }
 
 footer {
-    background-color: var(--azul-marinho);
-    padding: 30px;
+    background-color: #0D1B2A;
+    padding: 4rem 4rem 0px 4rem;
 }
 
 .footer-content {
@@ -264,8 +257,27 @@ footer {
     color: var(--branco);
     padding: 25px;
     width: 30%;
-    height: 15rem;
+    height: 24rem;
     border-radius: 10px;
+    background-color: #0D1B2A;
+}
+
+.footer-section h2 {
+    font-size: 4em;
+    padding-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 2.02rem;
+}
+
+.footer-section li {
+    font-size: 2.3rem;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
 }
 
 .link{
@@ -284,4 +296,9 @@ footer img{
     padding: 5px;
     text-align: center;
     color: white;
+    font-size: 2rem;
+}
+
+span {
+    color: var(--cinza-claro);
 }
