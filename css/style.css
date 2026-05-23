@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+html{
+    font-size: 10px;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -17,17 +22,17 @@
     --vermelho: #D90429;
 }
 
+
 header {
     background-color: var(--cinza-es);
-    padding: 0px 20px;
-
+    padding: 0rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 header p {
-    font-size: 2em;
+    font-size: 2.1rem;
 }
 
 .logo {
@@ -37,15 +42,13 @@ header p {
 }
 
 .logo img{
-    width: 220px;
+    width: 22rem;
 }
 
 .links {
     display: flex;
     gap: 10px;
 }
-
-
 
 
 /* OFERTAS */
@@ -68,7 +71,12 @@ header p {
 div.ofertas {
     background-color: var(--azul-marinho);
     width: 100%;
-    height: 300px;
+    height: 30rem;
+}
+
+.ofertas img {
+    width: 100%;
+    height: 55rem;
 }
 
 .links a {
@@ -77,7 +85,7 @@ div.ofertas {
     color: white;
     padding: 10px;
     border-radius: 10px;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: "Inconsolata", monospace;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -98,12 +106,22 @@ div.ofertas {
     justify-content: space-around;
     gap: 50px;
     padding: 50px 30px;
+    margin-top: 25rem;
+}
+
+.cards2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 50px 30px;
+    
 }
 
 .card {
     background-color: var(--cinza-es);
-    width: 500px;
-    height: 300px;
+    width: 50rem;
+    height: 30rem;
     flex-wrap: wrap;
     border-radius: 10px;
     box-shadow: 4px 4px 7px 0px black;
@@ -123,7 +141,7 @@ div.ofertas {
 .card img {
     background-color: var(--cinza-claro);
     width: 100%;
-    height: 200px;
+    height: 20rem;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -179,8 +197,8 @@ div.ofertas {
 
 .vant {
     background-color: var(--azul-marinho);
-    height: 300px;
-    width: 300px;
+    height: 30rem;
+    width: 30rem;
     border-radius: 10px;
     padding: 10px;
     color: white;
@@ -246,7 +264,7 @@ footer {
     color: var(--branco);
     padding: 25px;
     width: 30%;
-    height: 150px;
+    height: 15rem;
     border-radius: 10px;
 }
 
@@ -256,7 +274,7 @@ footer {
 }
 
 footer img{
-    width: 400px;
+    width: 40rem;
     margin: auto;
     display: block;
 }
