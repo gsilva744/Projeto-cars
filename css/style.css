@@ -22,6 +22,10 @@ html{
     --vermelho: #D90429;
 }
 
+body {
+    background-color: #2B2B2B;
+}
+
 
 header {
     background-color: var(--cinza-es);
@@ -111,7 +115,7 @@ div.ofertas {
 .card {
     background-color: var(--cinza-es);
     width: 50rem;
-    height: 30rem;
+    height: 35rem;
     flex-wrap: wrap;
     border-radius: 10px;
     box-shadow: 4px 4px 7px 0px black;
@@ -152,7 +156,7 @@ div.ofertas {
 }
 
 .vantagens {
-    background-color: var(--cinza-claro);
+    background-color: #aaaaaa;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -167,15 +171,6 @@ div.ofertas {
     padding: 20px 0px;
 }
 
-.vantagens a {
-    background-color: var(--vermelho);
-    padding: 5px 14px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 3em;
-}
-
 .content {
     display: flex;
     justify-content: space-between;
@@ -185,6 +180,24 @@ div.ofertas {
     gap: 40px;
 
     width: 100%;
+}
+
+#ocultos {
+    display: none;
+}
+
+.aparecer {
+    background-color: var(--vermelho);
+    padding: 5px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 .vant {
@@ -257,7 +270,7 @@ footer {
     color: var(--branco);
     padding: 25px;
     width: 30%;
-    height: 24rem;
+    height: 27rem;
     border-radius: 10px;
     background-color: #0D1B2A;
 }

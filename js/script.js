@@ -16,3 +16,18 @@ btn.forEach(btn => {
 
     })
 })
+
+const divs = document.querySelectorAll('#ocultos')
+const btnAparecer = document.querySelector('.aparecer')
+
+btnAparecer.addEventListener('click', () => {
+    divs.forEach(div => {
+        if(div.style.display === 'flex'){
+            div.style.display = 'none'
+            btnAparecer.textContent = 'Ver Mais'
+        } else {
+            div.style.display = 'flex'
+            btnAparecer.textContent = 'Ver Menos'
+        }
+    })
+})
