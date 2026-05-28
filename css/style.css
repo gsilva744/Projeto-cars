@@ -24,22 +24,24 @@ html{
 }
 
 body {
-    background-color: #2B2B2B;
+    background-color: #D1D1D1;
 }
 
 
 header {
-    background-color: var(--cinza-es);
+    background-color: var(--azul-marinho);
     padding: 0rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 0.1px solid white;
 }
 
 header p {
     font-size: 3rem;
     text-align: center;
     padding-left: 12rem;
+    color: var(--branco);
 }
 
 .logo {
@@ -57,9 +59,6 @@ header p {
     gap: 10px;
 }
 
-<<<<<<< Updated upstream
-=======
-
 
 
 /* OFERTAS */
@@ -70,7 +69,7 @@ header p {
     font-weight: weight;
     font-style: normal;
     font-variation-settings:
-    "wdth" 100; 
+    "width" 100; 
 }
 .lexend1, .lexend{
     font-family: "Lexend", sans-serif;
@@ -91,15 +90,15 @@ div.ofertas {
     
 }
 
->>>>>>> Stashed changes
 .links a {
     text-decoration: none;
-    background-color: var(--azul-marinho);
-    color: white;
+    background-color: rgba(255, 0, 0, 0.377);
+    color:white;
     padding: 10px;
     border-radius: 10px;
     font-size: 2.7rem;
     font-family: "Inconsolata", monospace;
+   
 }
 
 /* OFERTAS */
@@ -133,7 +132,6 @@ div.ofertas {
     justify-content: space-around;
     gap: 50px;
     padding: 50px 30px;
-<<<<<<< Updated upstream
     margin-top: 25rem;
     width: 90%;
     margin: auto;
@@ -147,15 +145,13 @@ div.ofertas {
     padding: 50px 30px;
     width: 90%;
     margin: auto;
-=======
     margin-top: 30px;
->>>>>>> Stashed changes
 }
 
 .card {
     background-color: var(--cinza-es);
     width: 50rem;
-    height: 35rem;
+    height: 40rem;
     flex-wrap: wrap;
     border-radius: 10px;
     box-shadow: 4px 4px 7px 0px black;
@@ -196,7 +192,7 @@ div.ofertas {
 }
 
 .vantagens {
-    background-color: #aaaaaa;
+    background-color: var(--azul-marinho);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -204,11 +200,13 @@ div.ofertas {
     height: auto;
     padding: 20px;
     gap: 10px;
+    
 }
 
 .vantagens h2 {
     font-size: 4rem;
     padding: 20px 0px;
+    color: white;
 }
 
 .content {
@@ -247,7 +245,7 @@ div.ofertas {
     border-radius: 10px;
     padding: 10px;
     color: white;
-    
+    border: 2px solid red;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly ;
@@ -260,6 +258,7 @@ div.ofertas {
    
     gap: 50px;
     margin: auto;
+    transition: all 0.3s ease;
 }
 
 .vant2 {
@@ -354,4 +353,12 @@ footer img{
 
 span {
     color: var(--cinza-claro);
+}
+
+.preco p{
+    font-size: 3rem;
+}
+
+.valorAntigo {
+    color: #D90429;
 }
