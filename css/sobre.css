@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     padding: 0px;
     margin: 0px;
@@ -9,6 +10,10 @@
 
 html{
     font-size: 10px;
+}
+
+body{
+    background-color: #adadad;
 }
 
 :root {
@@ -21,20 +26,31 @@ html{
     --vermelho: #D90429;
 }
 
+h1, h2, h3, h4 {
+    font-family: "Lexend", sans-serif;
+}
+
+p, li {
+    font-family: "Elms Sans", sans-serif;
+}
+
 /* HEADER */
 
 header {
-    background-color: var(--cinza-es);
+   background-color: var(--azul-marinho);
     padding: 0rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid white;
 }
 
 header p {
     font-size: 3rem;
     text-align: center;
     padding-left: 12rem;
+    color: white;
+    margin-right: 205px;
 }
 
 .logo {
@@ -54,8 +70,8 @@ header p {
 
 .links a {
     text-decoration: none;
-    background-color: var(--azul-marinho);
-    color: white;
+    background-color: rgba(255, 0, 0, 0.377);
+    color:white;
     padding: 10px;
     border-radius: 10px;
     font-size: 2.7rem;
@@ -74,7 +90,7 @@ header p {
     height: auto;
     flex-flow: column nowrap;
     gap: 10px;
-    background-color: var(--preto);
+    background-color: black;
 }
 
 .init h1 {
@@ -96,10 +112,10 @@ nav {
 
 nav a {
     color: white;
+    background-color: gray;
     padding: 8px;
     border-radius: 20px;
     text-decoration: none;
-    background-color: var(--cinza-es);
     cursor: initial;
     font-size: 2rem;
     width: 20rem;
@@ -111,6 +127,9 @@ main .content{
     margin: auto;
     padding: 20px;
     background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 6px 5px 7px #6a6a6a;
 }
 
 .content h2 {
@@ -124,7 +143,7 @@ main .content{
 
 .content p {
     font-size: 2.3rem;
-    line-height: 2;
+    line-height: 1.7;
     padding-bottom: 20px;
     text-align: justify;
 }
@@ -146,7 +165,7 @@ main .content{
     background-color: var(--azul-marinho);
     border-radius: 20px;
     width: 25em;
-    height: 25em;
+    height: 27em;
     gap: 20px;
     padding: 15px;
     margin-bottom: 3em;
@@ -157,6 +176,10 @@ main .content{
     font-size: 2rem;
     color: #FFFFFF;
     text-align: center;
+}
+
+.inconsolata{
+    font-family: "Inconsolata", monospace;
 }
 
 .cards .baixo h3 {
@@ -278,6 +301,7 @@ main .content{
 footer {
     background-color: #0D1B2A;
     padding: 4rem 4rem 0px 4rem;
+    margin-top: 50px;
 }
 
 .footer-content {
@@ -291,8 +315,8 @@ footer {
     border: 1px solid red;
     color: var(--branco);
     padding: 25px;
-    width: 30%;
-    height: 24rem;
+    width: 33%;
+    height: 30rem;
     border-radius: 10px;
     background-color: #0D1B2A;
 }
@@ -324,6 +348,11 @@ footer img{
     width: 40rem;
     margin: auto;
     display: block;
+}
+
+.footer-section a {
+    color: #D90429;
+    text-decoration: underline;
 }
 
 .copy {
